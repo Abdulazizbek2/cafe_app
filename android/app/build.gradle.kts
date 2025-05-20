@@ -18,8 +18,6 @@ if (localPropertiesFile.exists()) {
 
 
 var flutterVersionCode = localProperties.getProperty("flutter.versionCode").toIntOrNull()
-println("flutterVersionCode: $flutterVersionCode")
-println("flutterVersionCode: ${flutter.versionCode}")
 if (flutterVersionCode == null) {
     flutterVersionCode = flutter.versionCode
     if (flutterVersionCode == null) {
@@ -44,7 +42,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "uz.cafe_app.io.mobile"
+    namespace = "uz.udevs.io.mobile"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = project.property("flutter.ndkVersion") as String
 
